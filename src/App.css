@@ -46,26 +46,20 @@ li {
 }
 
 .carrot {
-  position: absolute;
-  top: 260px;
-  left: 180px;
+  position: relative;
+}
+
+.corn {
+  position: relative;
+}
+
+.potato {
+  position: relative;
 }
 .carrotImage,
 .cornImage,
 .potatoImage {
   width: 180px;
-}
-
-.corn {
-  position: absolute;
-  top: 260px;
-  left: 400px;
-}
-
-.potato {
-  position: absolute;
-  top: 260px;
-  left: 600px;
 }
 
 .imageContainer::after {

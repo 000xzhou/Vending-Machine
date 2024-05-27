@@ -1,4 +1,3 @@
-import { useState, useEffect } from "react";
 import useLocalStorage from "./useLocalStorage";
 
 const usePurchase = (itemKey, itemCost, initialItemValue) => {
@@ -14,7 +13,16 @@ const usePurchase = (itemKey, itemCost, initialItemValue) => {
     }
   };
 
-  return [item, money, purchaseItem];
+  const sellItem = () => {
+    if (money >= itemCost) {
+      setItem(item - 1);
+      setMoney(money + itemCost);
+    } else {
+      alert(`Not enough ${itemKey}`);
+    }
+  };
+
+  return [item, money, purchaseItem, sellItem];
 };
 
 export default usePurchase;

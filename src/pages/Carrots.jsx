@@ -1,15 +1,18 @@
 import { Link } from "react-router-dom";
-import usePurchase from "../hooks/usePurchase";
+import usePurchase from "../hooks/usePurchase.jsx";
 import Carrot from "../components/Carrot";
 
 function Carrots() {
-  const [carrot, money, buyCarrot] = usePurchase("carrot", 1, 0);
+  const [carrot, money, buyCarrot, sellCarrot] = usePurchase("carrot", 1, 0);
 
   return (
     <div>
-      <div>Carrot</div>
+      <div>
+        Carrot <p>cost: 1c</p>
+      </div>
       <p>You curently have {money}c in your wallet</p>
-      <button onClick={buyCarrot}>Buy Carrot 1c</button>
+      <button onClick={buyCarrot}>Buy Carrot</button>
+      <button onClick={sellCarrot}>Buy Carrot</button>
       <Carrot carrot={carrot} />
       <Link to="/">Go Back</Link>
     </div>

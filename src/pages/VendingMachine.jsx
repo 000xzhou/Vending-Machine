@@ -19,7 +19,7 @@ function VendingMachine() {
       <h2>What do you want to buy?</h2>
       <div>
         <Link to="/carrot">
-          <div className="imageContainer carrot" data-hover-text="1c">
+          <div className="imageContainer carrot" data-hover-text="2c">
             <img className="carrotImage" src={carrotImage} alt="Carrot" />
           </div>
         </Link>

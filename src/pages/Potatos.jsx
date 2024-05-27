@@ -3,12 +3,14 @@ import Potato from "../components/Potato";
 import usePurchase from "../hooks/usePurchase.jsx";
 
 function Potatos() {
-  const [potato, money, buyPotato, sellPotato] = usePurchase("potato", 5, 0);
+  const [potato, money, buyPotato, sellPotato] = usePurchase("potato", 5, 4, 0);
 
   return (
     <div>
       <div>
-        Potato <p>cost: 5c</p>
+        Potato
+        <p>cost: 5c</p>
+        <p>sell: 4c</p>
       </div>
       <p>You curently have {money}c in your wallet</p>
       <button onClick={buyPotato}>Buy Potato</button>

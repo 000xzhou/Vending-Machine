@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import VendingMachine from "./pages/VendingMachine";
-import Carrots from "./pages/Carrots";
-import Corns from "./pages/Corns";
-import Potatos from "./pages/Potatos";
+import VendingMachine from "./components/VendingMachine";
+import Carrots from "./components/Carrots";
+import Corns from "./components/Corns";
+import Potatos from "./components/Potatos";
 
 function App() {
   return (

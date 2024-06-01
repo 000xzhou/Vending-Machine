@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import useLocalStorage from "../hooks/useLocalStorage";
-import vmImage from "../assets/vm.png";
 import cornImage from "../assets/corn.jpg";
 import carrotImage from "../assets/carrot.jpg";
 import potatoImage from "../assets/potato.png";
